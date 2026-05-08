@@ -57,7 +57,8 @@ public class GriefDefenderHook implements RegionHook {
 		final Vector3i vector = Vector3i.from(location.getBlockX(), location.getBlockY(), location.getBlockZ());
 		final Core gd = GriefDefender.getCore();
 		final Claim claim = gd.getClaimManager(location.getWorld().getUID()).getClaimAt(vector);
-		return claim != null || !claim.isWilderness() ? claim.getUniqueId().toString() : null;
+		if (claim == null || claim.isWilderness()) return null;
+		return claim.getUniqueId().toString();
 	}
 
 	@Override

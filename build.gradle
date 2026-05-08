@@ -1,11 +1,11 @@
 plugins {
     id 'java'
-    id 'io.freefair.lombok' version '8.14'
-    id "io.github.goooler.shadow" version '8.1.8'
+    id 'io.freefair.lombok' version '9.5.0'
+    id "com.gradleup.shadow" version '9.4.1'
 }
 
 group = 'no.vestlandetmc'
-version = '1.8.2'
+version = '1.8.3'
 
 repositories {
     mavenCentral()
@@ -16,7 +16,7 @@ repositories {
 
 dependencies {
     compileOnly fileTree(dir: 'libs', include: ['*.jar'])
-    compileOnly 'io.papermc.paper:paper-api:1.21.11-R0.1-SNAPSHOT'
+    compileOnly 'io.papermc.paper:paper-api:26.1.2.build.+'
     compileOnly 'com.github.GriefPrevention:GriefPrevention:16.18.7'
     compileOnly 'com.griefdefender:api:2.1.1-SNAPSHOT'
     implementation 'org.bstats:bstats-bukkit:3.2.1'
@@ -33,7 +33,7 @@ jar {
     enabled = false
 }
 
-def targetJavaVersion = 21
+def targetJavaVersion = 25
 java {
     def javaVersion = JavaVersion.toVersion(targetJavaVersion)
     sourceCompatibility = javaVersion
