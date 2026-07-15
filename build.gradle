@@ -12,6 +12,8 @@ repositories {
     maven { url 'https://jitpack.io' }
     maven { url 'https://repo.papermc.io/repository/maven-public/' }
     maven { url 'https://repo.glaremasters.me/repository/bloodshot/' }
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url = 'https://repo.codemc.io/repository/maven-public/' }
 }
 
 dependencies {
@@ -19,6 +21,7 @@ dependencies {
     compileOnly 'io.papermc.paper:paper-api:26.1.2.build.+'
     compileOnly 'com.github.GriefPrevention:GriefPrevention:16.18.7'
     compileOnly 'com.griefdefender:api:2.1.1-SNAPSHOT'
+    compileOnly 'com.bekvon.bukkit:residence:5.1.4.3'
     implementation 'org.bstats:bstats-bukkit:3.2.1'
 }
 
