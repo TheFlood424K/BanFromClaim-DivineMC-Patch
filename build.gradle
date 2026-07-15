@@ -23,7 +23,9 @@ dependencies {
     compileOnly 'io.papermc.paper:paper-api:26.1.2.build.+'
     compileOnly 'com.github.GriefPrevention:GriefPrevention:16.18.7'
     compileOnly 'com.griefdefender:api:2.1.1-SNAPSHOT'
-    compileOnly 'com.github.Zrips:Residence:6.0.0.1'
+    compileOnly('com.github.Zrips:Residence:6.0.0.1') {
+        transitive = false
+    }
     implementation 'org.bstats:bstats-bukkit:3.2.1'
 }
 
