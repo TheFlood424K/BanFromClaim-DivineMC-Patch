@@ -1,6 +1,6 @@
 # BanFromClaim
 
-[![GitHub version](https://img.shields.io/github/v/release/theflood424k/BanFromClaim?style=plastic)](https://github.com/TheFlood424K/banfromclaim/releases)
+[![GitHub version](https://img.shields.io/github/v/release/theflood424k/BanFromClaim?style=plastic)](https://github.com/TheFlood424K/BanFromClaim-DivineMC-Patch/releases)
 
 An add-on for claim plugins that enables you to remove other players from your claim. If you prefer not to ban the
 player but still want them out, you can opt to kick them instead.
